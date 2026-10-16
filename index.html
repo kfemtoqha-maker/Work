@@ -375,6 +375,59 @@ nav.bn a svg.i{width:21px;height:21px}
 
 .ptabs{overflow-x:auto;scrollbar-width:none}.ptabs::-webkit-scrollbar{display:none}
 @media (max-width:560px){.ptabs span svg.i{display:none}.ptabs span{font-size:12.5px;padding:8px 6px;flex:1 0 auto}}
+
+/* ---------- 놓치면 안 되는 것 (포스트잇 보드) ---------- */
+.pinb{position:relative;border-radius:20px;padding:16px 16px 20px;margin-bottom:16px;background:#C9A87C;
+ background-image:radial-gradient(rgba(255,255,255,.13) 1px,transparent 1.4px),radial-gradient(rgba(80,50,20,.16) 1px,transparent 1.5px),linear-gradient(160deg,#D4B48A,#BF9C6E);
+ background-size:7px 7px,11px 11px,100% 100%;background-position:0 0,3px 5px,0 0;box-shadow:0 6px 18px -8px rgba(60,35,10,.5)}
+.pinh{display:flex;justify-content:space-between;align-items:center;margin:2px 4px 14px}
+.pint{display:inline-flex;gap:6px;align-items:center;background:#FFFDF6;color:#3A2A14;font-weight:800;font-size:14.5px;padding:5px 12px 5px 9px;border-radius:6px;box-shadow:0 2px 0 rgba(0,0,0,.15);transform:rotate(-1deg)}
+.pint svg.i{width:16px;height:16px;color:#D23B2B}
+.pinsub{font-size:11px;color:#FFF7E8;opacity:.9}
+.pgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 14px}
+.pnote{position:relative;background:var(--pc);color:#2E2618;padding:20px 13px 13px;min-height:104px;border-radius:2px 2px 2px 18px/2px 2px 2px 14px;transform:rotate(var(--rot));cursor:pointer;
+ box-shadow:0 1px 1px rgba(0,0,0,.08),0 10px 12px -8px rgba(40,25,5,.55);transition:transform .15s}
+.pnote::after{content:"";position:absolute;left:0;bottom:0;width:22px;height:18px;background:linear-gradient(45deg,rgba(0,0,0,.10),rgba(255,255,255,.35) 50%,transparent 52%);border-radius:0 0 0 14px}
+.pnote:hover{transform:rotate(0deg) scale(1.02)}
+.ppin{position:absolute;top:-7px;left:50%;width:17px;height:17px;margin-left:-8.5px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#FF9C8F 0 18%,#E5392B 45%,#9C1D12 100%);box-shadow:2px 4px 4px rgba(0,0,0,.35)}
+.ppin::after{content:"";position:absolute;left:7px;top:14px;width:3px;height:6px;background:rgba(0,0,0,.18);border-radius:2px;transform:rotate(20deg)}
+.pnt{font-size:13px;font-weight:700;color:#5B4A2C;line-height:1.35}
+.pnd{font-size:16px;font-weight:800;margin-top:6px;line-height:1.35;color:#1F1A10;word-break:keep-all}
+.pntags{display:flex;flex-wrap:wrap;gap:4px;margin-top:7px}
+.pntags span{font-size:12.5px;font-weight:700;background:rgba(255,255,255,.65);border:1px solid rgba(60,40,10,.15);border-radius:6px;padding:2px 7px}
+.pntags span::before{content:"☐ ";font-weight:400;opacity:.6}
+.pdl{display:inline-block;margin-top:8px;font-size:11.5px;font-weight:700;background:rgba(255,255,255,.7);border-radius:6px;padding:2px 7px;color:#3A2A14}
+.pdl.soon{background:#E9A43A;color:#fff}.pdl.over{background:#D23B2B;color:#fff}
+.pnote.padd{background:rgba(255,253,246,.35);border:2px dashed rgba(255,253,246,.8);box-shadow:none;transform:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:#FFFDF6;font-size:12.5px;font-weight:700;padding:13px}
+.pnote.padd::after{display:none}.pnote.padd svg.i{width:20px;height:20px}
+.pnote.pprev{cursor:default;margin:16px 0 4px;transform:none}.pnote.pprev:hover{transform:none}
+.pprev input,.pprev textarea{background:rgba(255,255,255,.55);border:1px dashed rgba(60,40,10,.25);color:#1F1A10}
+.pprev input{font-weight:700;margin-bottom:6px}.pprev textarea{font-weight:700;font-size:15px}
+.pcol{width:34px;height:34px;border-radius:8px;cursor:pointer;border:2px solid rgba(0,0,0,.08);display:inline-block}
+.pcol.on{border-color:var(--ink);box-shadow:0 0 0 2px var(--surface) inset}
+@media (max-width:420px){.pgrid{gap:18px 10px}.pnd{font-size:15px}}
+
+/* ---------- 프로젝트 목록 찾기 ---------- */
+.psrch{margin-bottom:10px}
+.pquick{display:flex;gap:6px;overflow-x:auto;padding:2px 2px 8px;scrollbar-width:none}.pquick::-webkit-scrollbar{display:none}
+.pquick .pq{flex:none;padding:7px 12px;border-radius:999px;background:var(--c);color:var(--t);font-size:12.5px;font-weight:700;cursor:pointer;white-space:nowrap;max-width:220px;overflow:hidden;text-overflow:ellipsis;border:1px solid transparent}
+.pquick .pq:hover{border-color:var(--m)}
+.psort{width:auto;padding:6px 8px;font-size:12px;border-radius:10px}
+.ptools{display:flex;gap:6px;justify-content:flex-end;margin:-4px 0 10px}
+.pvt{border:1px solid var(--line);border-radius:10px;height:32px;width:auto;padding:0 10px;gap:4px;font-size:12px;display:inline-flex;align-items:center}
+.pstar{border:none;background:none;font-size:20px;line-height:1;color:var(--ink3);padding:4px;flex:none;cursor:pointer}
+.pstar.on{color:#E9A43A}
+@media (min-width:900px){.pgrid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}}
+.prow-w{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.prow{display:flex;align-items:center;gap:8px;padding:9px 10px 9px 14px;border-bottom:1px solid var(--line);cursor:pointer;font-size:13.5px}
+.prow:last-child{border-bottom:none}.prow:hover{background:var(--sunk)}
+.prow .pdot{width:9px;height:9px;border-radius:50%;background:var(--m);flex:none}
+.prow .prn{flex:1;min-width:0;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.prow .pill{flex:none;font-size:10.5px}
+.prow .prp{width:38px;text-align:right;font-size:12px;font-weight:700;color:var(--t);flex:none;font-variant-numeric:tabular-nums}
+.prow .prd{width:40px;text-align:right;font-size:11px;color:var(--ink3);flex:none;font-variant-numeric:tabular-nums}
+.prow .pstar{font-size:17px;padding:2px}
+@media (max-width:420px){.prow .pill{display:none}}
 </style>
 </head>
 <body>
@@ -444,7 +497,7 @@ const progTxt=g=>g?`${g.st} · ${g.v}%`:'';
 const OFFS=['연차','오전 반차','오후 반차','반반차','공휴일','대체 휴일','여름 휴가','기타 휴가'];
 const offDays=t=>{const s=first(t);return /반반차/.test(s)?0.25:/반차/.test(s)?0.5:/연차/.test(s)?1:0};
 const ALIAS={'MBTi':['mbti','c-mirror','c-miirror','isra','이스라'],'FBi':['fbi'],'LGE 기타':['hb tir','sfl','dtm','ctl','blu','프리즘','신성철','lge'],'Magna':['magna','sae','c1yc','ece','biled','uvm'],'SOS LAB':['sos lab','sos','ø10.5','ø5.5','파이'],'UTG':['utg','hbo','에이치비'],'Hella':['hella','헬라','phb','실리콘 렌즈','평탄도'],'Brolis':['brolis','브롤리스'],'SAG TIR':['sag tir','sag'],'DIVEPRO':['divepro','dive pro','구영광학','흑칠'],'Methode':['methode','shield','프로스코'],'SMR':['smr','ll4','ll2','nq6','logo lamp'],'ENVICIS':['envicis','루미텍 직가공'],'Panasonic':['panasonic','파나소닉'],'기타 고객사':['zkw','fng','ficosa','zoox','nal)','alt)','에픽옵틱스','에텐듀','varroc'],'공통업무':['ojt','교육','세미나','매뉴얼','경비','신입']};
-let S={projects:[],appr:[],needs:[],nid:20000,tasks:[],mesBook:[],lots:[],molds:[]};
+let S={projects:[],appr:[],needs:[],nid:20000,tasks:[],mesBook:[],lots:[],molds:[],pins:[]};
 let view='home',pid=null,sub='need',showF=false,ed=null,delC=false,cy,cmn,csel,day,openTxt=new Set(),openSum=new Set(),editSum=null,mode='load',pfilter='전체',pq='',pf=null,F=null,uname='',backTo='home';
 let sampleNS=null;
 const mOpen={};
@@ -470,7 +523,7 @@ const eday=t=>t.done?(t.c||t.d):t.d;
 const logs=()=>S.tasks.filter(t=>t.tp==='task');
 function catOf(t){if(t.cat)return t.cat;const s=t.t.toLowerCase();
   if(/회의|cc|미팅|협의|참관|내방|세미나/.test(s))return '회의';if(/보고|공유|성적서|summary|회신|송부|전달/.test(s))return '보고';if(/검토|확인|측정|분석|check/.test(s))return '검토';return '업무처리'}
-function ic(n){const P={home:'<path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/>',log:'<rect x="4" y="3" width="16" height="18" rx="3"/><path d="M8 8h8M8 12h8M8 16h5"/>',folder:'<path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>',stamp:'<path d="M9 3h6v5l3 3v3H6v-3l3-3zM5 18h14M7 21h10"/>',chart:'<path d="M5 20V11M11 20V5M17 20v-7M3 20h18"/>',cal:'<rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/>',clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',check:'<circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/>',tick:'<path d="M5 12l5 5 9-10"/>',plus:'<path d="M12 5v14M5 12h14"/>',l:'<path d="M15 18l-6-6 6-6"/>',r:'<path d="M9 6l6 6-6 6"/>',search:'<circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/>',clip:'<path d="M20 11l-8 8a5 5 0 0 1-7-7l8-8a3.5 3.5 0 0 1 5 5l-8 8a2 2 0 0 1-3-3l7-7"/>',bulb:'<path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.8.8 1 1.5 1 2.5h6c0-1 .2-1.7 1-2.5A6 6 0 0 0 12 3z"/>',pen:'<path d="M4 20h4L19 9l-4-4L4 16z"/>',x:'<path d="M6 6l12 12M18 6L6 18"/>',bell:'<path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4zM10 21h4"/>',up:'<path d="M6 15l6-6 6 6"/>',down:'<path d="M6 9l6 6 6-6"/>',sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5"/>',more:'<circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/>',tool:'<path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3.6 17.2a1.6 1.6 0 0 0 2.3 2.3l5.7-5.7a4 4 0 0 0 5.2-5.4l-2.5 2.5-2.1-.4-.4-2.1z"/>',cube:'<path d="M12 2.8l8.5 4.7v9L12 21.2l-8.5-4.7v-9z"/><path d="M3.5 7.5L12 12l8.5-4.5M12 12v9.2"/>',cam:'<path d="M4 8h3l2-2.5h6L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.5"/>'};return `<svg class="i" viewBox="0 0 24 24" aria-hidden="true">${P[n]||''}</svg>`}
+function ic(n){const P={home:'<path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/>',log:'<rect x="4" y="3" width="16" height="18" rx="3"/><path d="M8 8h8M8 12h8M8 16h5"/>',folder:'<path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>',stamp:'<path d="M9 3h6v5l3 3v3H6v-3l3-3zM5 18h14M7 21h10"/>',chart:'<path d="M5 20V11M11 20V5M17 20v-7M3 20h18"/>',cal:'<rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/>',clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',check:'<circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/>',tick:'<path d="M5 12l5 5 9-10"/>',plus:'<path d="M12 5v14M5 12h14"/>',l:'<path d="M15 18l-6-6 6-6"/>',r:'<path d="M9 6l6 6-6 6"/>',search:'<circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/>',clip:'<path d="M20 11l-8 8a5 5 0 0 1-7-7l8-8a3.5 3.5 0 0 1 5 5l-8 8a2 2 0 0 1-3-3l7-7"/>',bulb:'<path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.8.8 1 1.5 1 2.5h6c0-1 .2-1.7 1-2.5A6 6 0 0 0 12 3z"/>',pen:'<path d="M4 20h4L19 9l-4-4L4 16z"/>',x:'<path d="M6 6l12 12M18 6L6 18"/>',bell:'<path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4zM10 21h4"/>',up:'<path d="M6 15l6-6 6 6"/>',down:'<path d="M6 9l6 6 6-6"/>',sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5"/>',more:'<circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/>',pin:'<path d="M9 3h6l-1 6 3 3v2H7v-2l3-3z"/><path d="M12 14v7"/>',tool:'<path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3.6 17.2a1.6 1.6 0 0 0 2.3 2.3l5.7-5.7a4 4 0 0 0 5.2-5.4l-2.5 2.5-2.1-.4-.4-2.1z"/>',cube:'<path d="M12 2.8l8.5 4.7v9L12 21.2l-8.5-4.7v-9z"/><path d="M3.5 7.5L12 12l8.5-4.5M12 12v9.2"/>',cam:'<path d="M4 8h3l2-2.5h6L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.5"/>'};return `<svg class="i" viewBox="0 0 24 24" aria-hidden="true">${P[n]||''}</svg>`}
 const FOLDER='<svg viewBox="0 0 24 24"><path d="M2.5 6.5a2 2 0 0 1 2-2h4.3l2.2 2.2h8.5a2 2 0 0 1 2 2v9.8a2 2 0 0 1-2 2h-15a2 2 0 0 1-2-2z"/></svg>';
 const todayOpen=()=>S.tasks.filter(t=>t.tp==='task'&&t.d===TD()&&!t.done).sort((a,b)=>a.r-b.r);
 function renum(){todayOpen().forEach((t,i)=>{if(t.r!==i+1){t.r=i+1;dirtyT(t)}})}
@@ -489,11 +542,11 @@ const nid=()=>{let v=uid();if(v<=(window._lastId||0))v=window._lastId+1;window._
 /* S ↔ records */
 function snapshot(){const m=new Map(),put=(k,d)=>m.set(k,JSON.stringify(d));
   S.projects.forEach((p,i)=>put('p:'+p.id,{...p,_o:i}));S.appr.forEach((a,i)=>put('a:'+a.id,{...a,_o:i}));S.needs.forEach(n=>put('n:'+n.id,n));
-  S.tasks.forEach(t=>put('t:'+t.id,t));(S.mesBook||[]).forEach(x=>put('m:'+x.mes,x));(S.lots||[]).forEach(x=>put('l:'+x.lotNo,x));(S.molds||[]).forEach(x=>put('g:'+x.id,x));return m}
-function rebuild(){const P=[],A=[],N=[],T=[],M=[],LT=[],G=[];
-  Object.values(RECS).forEach(r=>{if(r.del||!r.d)return;const c=r.k[0],d=JSON.parse(JSON.stringify(r.d));({p:P,a:A,n:N,t:T,m:M,l:LT,g:G})[c]?.push(d)});
+  S.tasks.forEach(t=>put('t:'+t.id,t));(S.mesBook||[]).forEach(x=>put('m:'+x.mes,x));(S.lots||[]).forEach(x=>put('l:'+x.lotNo,x));(S.molds||[]).forEach(x=>put('g:'+x.id,x));(S.pins||[]).forEach(x=>put('k:'+x.id,x));return m}
+function rebuild(){const P=[],A=[],N=[],T=[],M=[],LT=[],G=[],K=[];
+  Object.values(RECS).forEach(r=>{if(r.del||!r.d)return;const c=r.k[0],d=JSON.parse(JSON.stringify(r.d));({p:P,a:A,n:N,t:T,m:M,l:LT,g:G,k:K})[c]?.push(d)});
   const so=(a,b)=>(a._o??1e9)-(b._o??1e9);P.sort(so);A.sort(so);[...P,...A].forEach(x=>delete x._o);
-  S={projects:P,appr:A,needs:N,tasks:T,mesBook:M,lots:LT,molds:G,nid:0};LAST=snapshot()}
+  S={projects:P,appr:A,needs:N,tasks:T,mesBook:M,lots:LT,molds:G,pins:K,nid:0};LAST=snapshot()}
 function capture(){const cur=snapshot(),now=Date.now();let n=0;
   cur.forEach((v,k)=>{if(LAST.get(k)!==v){RECS[k]={k,d:JSON.parse(v),u:now,dev:CFG.dev,pend:1};n++}});
   LAST.forEach((v,k)=>{if(!cur.has(k)){RECS[k]={k,del:1,u:now,dev:CFG.dev,pend:1};n++}});LAST=cur;return n}
@@ -536,16 +589,16 @@ async function openFile(id){try{let b=await iget('blobs',id);
   catch(e){toast('파일을 열지 못했습니다: '+e.message)}}
 /* backup */
 function dl(name,data){const b=new Blob([data],{type:name.endsWith('.json')?'application/json':'text/plain;charset=utf-8'}),u=URL.createObjectURL(b),a=document.createElement('a');a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),5000)}
-function backupJson(){return JSON.stringify({projects:S.projects,appr:S.appr,needs:S.needs,tasks:S.tasks,mesBook:S.mesBook,lots:S.lots||[],molds:S.molds||[],exported:new Date().toISOString()})}
+function backupJson(){return JSON.stringify({projects:S.projects,appr:S.appr,needs:S.needs,tasks:S.tasks,mesBook:S.mesBook,lots:S.lots||[],molds:S.molds||[],pins:S.pins||[],exported:new Date().toISOString()})}
 async function importBackup(inp){const f=inp.files&&inp.files[0];if(!f)return;try{const j=JSON.parse(await f.text());if(!Array.isArray(j.projects)||!Array.isArray(j.tasks))throw new Error('업무일지 백업 파일이 아닙니다');
   const b=$('impb');if(Object.keys(RECS).length&&b&&b.dataset.c!=='1'){b.dataset.c='1';window._imp=j;b.textContent='현재 기록을 백업 내용으로 바꿉니다. 한 번 더 누르면 진행';return}
-  S={projects:j.projects,appr:j.appr||[],needs:j.needs||[],tasks:j.tasks,mesBook:j.mesBook||[],lots:j.lots||[],molds:j.molds||[],nid:0};dirtyM();await saveNow('백업을 불러왔습니다');go('home')}catch(e){toast('불러오기 실패: '+e.message)}}
+  S={projects:j.projects,appr:j.appr||[],needs:j.needs||[],tasks:j.tasks,mesBook:j.mesBook||[],lots:j.lots||[],molds:j.molds||[],pins:j.pins||[],nid:0};dirtyM();await saveNow('백업을 불러왔습니다');go('home')}catch(e){toast('불러오기 실패: '+e.message)}}
 /* init */
 async function init(){const now=new Date();cy=now.getFullYear();cmn=now.getMonth();csel=TD();day=TD();
   try{IDB=await idb();RECS=(await iget('kv','recs'))||{};if(window.PREVIEW_SEED&&!Object.keys(RECS).length)RECS=JSON.parse(JSON.stringify(window.PREVIEW_SEED));CFG={...CFG,...((await iget('kv','cfg'))||{})}}catch(e){setBanner('이 브라우저에서는 저장소를 쓸 수 없습니다 (사생활 보호 모드 확인)');return}
   if(!CFG.dev){CFG.dev='d'+Math.random().toString(36).slice(2,8);await iput('kv','cfg',CFG)}
   try{if(location.protocol==='https:'){const r=await fetch('/api/hello',{cache:'no-store'});if(r.ok){const h=await r.json();if(h.app==='worklog'&&h.token){CFG.url=location.origin;CFG.token=h.token;await iput('kv','cfg',CFG)}}}}catch(e){}
-  rebuild();
+  if(Object.keys(RECS).length)pinSeed();rebuild();
   if(!S.projects.length&&!S.tasks.length){emptyView();if(CFG.url&&CFG.token){await sync();if(S.projects.length)render()}}else render();
   syncPill();if(CFG.url&&CFG.token)sync();
   setInterval(()=>{if(CFG.url&&CFG.token&&!busy())sync()},45000);
@@ -553,7 +606,7 @@ async function init(){const now=new Date();cy=now.getFullYear();cmn=now.getMonth
   if('serviceWorker' in navigator&&location.protocol==='https:')navigator.serviceWorker.register('sw.js').catch(()=>{})}
 function emptyView(){$('body').innerHTML=`<div class="center"><h2>아직 기록이 없습니다</h2><div class="muted" style="margin-bottom:16px">PC 동기화를 설정하면 PC에 있는 기록을 받아옵니다.</div>
 <div style="display:flex;flex-direction:column;gap:8px;max-width:260px;margin:0 auto"><button class="btns" style="padding:11px" onclick="go('set')">PC 동기화 설정</button><button onclick="startEmpty()">빈 상태로 시작</button></div></div>`}
-function startEmpty(){S={projects:[{id:'p1',n:'공통업무',k:7,sum:''}],appr:[],needs:[],tasks:[],mesBook:[],lots:[],molds:[],nid:0};dirtyM();render()}
+function startEmpty(){S={projects:[{id:'p1',n:'공통업무',k:7,sum:''}],appr:[],needs:[],tasks:[],mesBook:[],lots:[],molds:[],pins:[],nid:0};dirtyM();render()}
 function busy(){const a=document.activeElement;return dirty.size>0||flushing||view==='write'||view==='lotw'||view==='lsum'||view==='moldw'||!!ed||!!pf||!!editSum||showF||(a&&['INPUT','TEXTAREA','SELECT'].includes(a.tagName))}
 /* 설정 화면 */
 async function saveCfg(){CFG.url=$('cu').value.trim().replace(/\/$/,'');CFG.token=$('ct').value.trim();if(CFG.url&&!/^https:\/\//.test(CFG.url))CFG.url='https://'+CFG.url.replace(/^https?:\/\//,'');
@@ -576,7 +629,7 @@ ${CFG.url?`<button class="w100" style="margin-top:10px" onclick="sync(true)">지
 function nav(){const it=[['home','홈','home'],['log','일지','log'],['proj','프로젝트','folder'],['appr','품의','stamp'],['mbo','분석','chart']];
   const act={home:'home',log:'log',cal:'log',write:backTo==='log'?'log':backTo==='proj'||backTo==='pd'?'proj':'home',lsum:'proj',mold:'proj',moldw:backTo==='log'?'log':backTo==='proj'||backTo==='pd'||backTo==='mold'?'proj':'home',lotw:backTo==='log'?'log':backTo==='proj'||backTo==='pd'?'proj':'home',proj:'proj',pd:'proj',newp:'proj',appr:'appr',mbo:'mbo',set:'mbo'}[view];
   $('nav').innerHTML=it.map(([v,l,i])=>`<a class="${act===v?'on':''}" onclick="go('${v}')">${ic(i)}<span>${l}${v==='appr'&&S.needs.length?` <span class="pill kr" style="padding:0 5px">${S.needs.length}</span>`:''}</span></a>`).join('')}
-function go(v,arg){LF=null;MF=null;if(v!=='write'&&v!=='lotw'&&v!=='moldw')backTo=v==='pd'?'pd':v;view=v;if(v==='pd')pid=arg;ed=null;showF=false;editSum=null;pf=null;render();window.scrollTo(0,0)}
+function go(v,arg){LF=null;MF=null;if(v==='pd'&&arg)pRecent(arg);if(v!=='write'&&v!=='lotw'&&v!=='moldw')backTo=v==='pd'?'pd':v;view=v;if(v==='pd')pid=arg;ed=null;showF=false;editSum=null;pf=null;render();window.scrollTo(0,0)}
 function fab(on){$('fabw').innerHTML=on?`<button class="fab" onclick="openAdd()">${ic('plus')} 기록</button>`:''}
 function hdr(t,back,right){return `<div class="phd">${back?`<button class="back" onclick="${back}" aria-label="뒤로">${ic('l')}</button>`:''}<h1>${t}</h1>${right||''}</div>`}
 
@@ -631,6 +684,7 @@ ${past.length?`<div class="fl" style="margin-top:14px"><span>지난 미완료 ${
 <div class="card"><div class="ct"><h2>이번 주 일정</h2><button class="more" onclick="go('cal')">더보기 ${ic('r')}</button></div>${weekStrip(td,false)}</div>
 <div class="card"><div class="ct"><h2>프로젝트별 업무 현황</h2><button class="more" onclick="go('proj')">전체 ${ic('r')}</button></div>${hot.map(projCardMini).join('')}</div>
 </div><div>
+${pinBoard()}
 <div class="card"><div class="ct"><h2>최근 작성한 일지</h2><button class="more" onclick="go('log')">전체보기 ${ic('r')}</button></div>${recentList(8)}</div>
 ${(()=>{const up=logs().filter(t=>!t.done&&t.d>td).sort((a,c)=>a.d.localeCompare(c.d)).slice(0,5);return up.length?`<div class="card"><div class="ct"><h2>다가오는 일정</h2></div>${up.map(t=>`<div class="rl k${jn(t.j).k}" onclick="openWrite(${t.id})"><span class="bl"></span><div style="flex:1;min-width:0"><div class="mt"><span>${t.d.replace(/-/g,'.')}</span><span class="pill">${esc(jn(t.j).n)}</span></div><div class="tt">${esc(first(t.t))}</div></div></div>`).join('')}</div>`:''})()}
 </div></div>`}
@@ -731,17 +785,35 @@ const ISSUE_RE=/불량|\bng\b|크랙|이슈|지연|보류|flow mark|누수|박�
 const plogs=id=>S.tasks.filter(t=>t.j===id&&t.tp!=='off');
 function lastUpd(id){const L=plogs(id).sort((a,b)=>eday(b).localeCompare(eday(a))||(b.time||'').localeCompare(a.time||'')||b.id-a.id)[0];return L?`${eday(L).replace(/-/g,'.')}${L.time?' '+L.time:''}`:'-'}
 const stPill=p=>`<span class="pill ${PSTK[pst(p)]}">● ${pst(p)}</span>`;
-function projView(){let L=S.projects.filter(p=>pfilter==='전체'?pst(p)!=='보관':pfilter==='진행중'?['진행중','대기중'].includes(pst(p)):pfilter==='완료'?pst(p)==='완료':pst(p)==='보관');
-  if(pq)L=L.filter(p=>p.n.toLowerCase().includes(pq.toLowerCase())||(p.cust||'').toLowerCase().includes(pq.toLowerCase())||plogs(p.id).some(t=>t.t.toLowerCase().includes(pq.toLowerCase())));
-  return hdr('프로젝트',null,`<button class="back" onclick="pSearch=!pSearch;render()" aria-label="검색">${ic('search')}</button><button class="back" onclick="go('mold')" aria-label="금형 수정 대장" title="금형 수정 대장">${ic('tool')}</button><button class="back" onclick="go('cal')" aria-label="캘린더">${ic('cal')}</button>`)+`
-${pSearch||pq?`<div class="selbox" style="margin-bottom:10px">${ic('search')}<input id="pq" value="${esc(pq)}" placeholder="프로젝트·고객사·일지 내용 검색" oninput="pq=this.value;clearTimeout(window._pq);window._pq=setTimeout(()=>{render();const e=$('pq');e.focus();e.setSelectionRange(e.value.length,e.value.length)},300)"></div>`:''}
-<div class="seg4">${['전체','진행중','완료','보관함'].map(f=>{const k=f==='보관함'?'보관':f;return `<span class="fchip${pfilter===k?' on':''}" onclick="pfilter='${k}';render()">${f}</span>`}).join('')}</div>
-<label class="selbox" style="margin:10px 0 18px;cursor:pointer">${ic('cal')}<input type="date" value="${RD()}" onchange="refDay=this.value||null;render()" style="font-weight:600"><span class="muted" style="font-size:12px;flex:none">기준일</span></label>
-<div class="ct"><h2>프로젝트 목록 <span class="muted" style="font-weight:400;font-size:13px">${L.length}</span></h2><button class="more" onclick="newP()">${ic('plus')} 새 프로젝트</button></div>
-<div class="plist">${L.map(p=>{const g=progOf(p);return `<div class="pli k${p.k}" onclick="pdTab='sum';go('pd','${p.id}')"><div class="fi" style="background:var(--c)">${FOLDER}</div>
+/* 프로젝트 목록: 검색 상시 노출 · 즐겨찾기/최근 본 바로가기 · 정렬 · 한 줄 목록 보기 */
+function pLast(id){const td=TD();let m='';const up=d=>{if(d&&d<=td&&d>m)m=d};plogs(id).forEach(t=>up(eday(t)));(S.lots||[]).forEach(l=>{if(l.j===id)up(l.date)});(S.molds||[]).forEach(x=>{if(x.j===id)up(x.date)});return m}
+function pRecent(id){const a=(CFG.rp||[]).filter(x=>x!==id);a.unshift(id);CFG.rp=a.slice(0,8);iput('kv','cfg',CFG)}
+function pFav(e,id){e.stopPropagation();const p=jn(id);p.fav=!p.fav;if(!p.fav)delete p.fav;dirtyM();render()}
+function pSetQ(v){pq=v;const L=$('plistw');if(!L)return;L.innerHTML=projListHtml();const c=$('pcnt');if(c)c.textContent=projFiltered().length}
+function projFiltered(){let L=S.projects.filter(p=>pfilter==='전체'?pst(p)!=='보관':pfilter==='진행중'?['진행중','대기중'].includes(pst(p)):pfilter==='완료'?pst(p)==='완료':pst(p)==='보관');
+  if(pq){const q=pq.toLowerCase();L=L.filter(p=>p.n.toLowerCase().includes(q)||(p.cust||'').toLowerCase().includes(q)||(p.mes||'').toLowerCase().includes(q)||(p.alias||[]).some(a=>a.toLowerCase().includes(q))||plogs(p.id).some(t=>t.t.toLowerCase().includes(q)))}
+  const srt=CFG.psort||'recent';
+  if(srt==='recent'){const lu={};L.forEach(p=>lu[p.id]=pLast(p.id));L=L.slice().sort((a,b)=>lu[b.id].localeCompare(lu[a.id]))}
+  else if(srt==='name')L=L.slice().sort((a,b)=>a.n.replace(/^\[[^\]]*\]\s*/,'').localeCompare(b.n.replace(/^\[[^\]]*\]\s*/,''),'ko'));
+  return [...L.filter(p=>p.fav),...L.filter(p=>!p.fav)]}
+function projListHtml(){const L=projFiltered(),cmp=CFG.pview==='list',star=p=>`<button class="pstar${p.fav?' on':''}" onclick="pFav(event,'${p.id}')" aria-label="즐겨찾기">${p.fav?'★':'☆'}</button>`;
+  if(!L.length)return '<div class="muted">해당하는 프로젝트가 없습니다.</div>';
+  if(cmp)return `<div class="prow-w">${L.map(p=>{const g=progOf(p),lu=pLast(p.id);return `<div class="prow k${p.k}" onclick="pdTab='sum';go('pd','${p.id}')"><span class="pdot"></span><span class="prn">${esc(p.n)}</span>${stPill(p)}<span class="prp">${g?g.v+'%':''}</span><span class="prd">${lu?lu.slice(5).replace('-','/'):'-'}</span>${star(p)}</div>`}).join('')}</div>`;
+  return `<div class="plist pgrid2">${L.map(p=>{const g=progOf(p);return `<div class="pli k${p.k}" onclick="pdTab='sum';go('pd','${p.id}')"><div class="fi" style="background:var(--c)">${FOLDER}</div>
 <div style="flex:1;min-width:0"><div style="display:flex;align-items:center;gap:8px"><span class="pn2">${esc(p.n)}</span>${stPill(p)}</div>
 ${g?`<div class="pb" style="margin:7px 0 2px"><i style="width:${g.v}%"></i></div><div class="pv">${g.v}% <span class="muted" style="font-size:11px">${g.st}</span></div>`:`<div class="pv muted" style="margin-top:6px">${esc(p.cust||'')}</div>`}
-<div class="muted" style="font-size:11px">최근 업데이트 ${lastUpd(p.id)}</div></div><span style="color:var(--ink3)">${ic('r')}</span></div>`}).join('')||'<div class="muted">해당하는 프로젝트가 없습니다.</div>'}</div>`}
+<div class="muted" style="font-size:11px">최근 업데이트 ${lastUpd(p.id)}</div></div>${star(p)}</div>`}).join('')}</div>`}
+function projView(){const L=projFiltered(),favs=S.projects.filter(p=>p.fav),rec=(CFG.rp||[]).map(id=>S.projects.find(p=>p.id===id)).filter(p=>p&&!p.fav).slice(0,6),quick=[...favs.map(p=>[p,1]),...rec.map(p=>[p,0])];
+  return hdr('프로젝트',null,`<button class="back" onclick="go('mold')" aria-label="금형 수정 대장" title="금형 수정 대장">${ic('tool')}</button><button class="back" onclick="go('cal')" aria-label="캘린더">${ic('cal')}</button>`)+`
+<div class="selbox psrch">${ic('search')}<input id="pq" value="${esc(pq)}" placeholder="프로젝트 · 고객사 · 작번 · 일지 내용 검색" oninput="pSetQ(this.value)">${pq?`<button class="ib" onclick="pq='';render()" aria-label="지우기">${ic('x')}</button>`:''}</div>
+${quick.length&&!pq?`<div class="pquick">${quick.map(([p,f])=>`<span class="pq k${p.k}" onclick="pdTab='sum';go('pd','${p.id}')">${f?'★ ':''}${esc(p.n.replace(/^\[[^\]]*\]\s*/,''))}</span>`).join('')}</div><div class="muted" style="font-size:11px;margin:-4px 2px 10px">★ 즐겨찾기 · 최근 본 프로젝트</div>`:''}
+<div class="seg4">${['전체','진행중','완료','보관함'].map(f=>{const k=f==='보관함'?'보관':f;return `<span class="fchip${pfilter===k?' on':''}" onclick="pfilter='${k}';render()">${f}</span>`}).join('')}</div>
+<div class="ct" style="margin-top:14px"><h2>프로젝트 목록 <span id="pcnt" class="muted" style="font-weight:400;font-size:13px">${L.length}</span></h2><button class="more" onclick="newP()">${ic('plus')} 새 프로젝트</button></div>
+<div class="ptools"><select class="psort" onchange="CFG.psort=this.value;iput('kv','cfg',CFG);render()">${[['recent','최근 업데이트순'],['name','이름순'],['manual','기본 순서']].map(([k,l])=>`<option value="${k}"${(CFG.psort||'recent')===k?' selected':''}>${l}</option>`).join('')}</select>
+<button class="ib pvt" onclick="CFG.pview=CFG.pview==='list'?'card':'list';iput('kv','cfg',CFG);render()" title="${CFG.pview==='list'?'카드로 보기':'한 줄 목록으로 보기'}">${CFG.pview==='list'?ic('folder'):ic('log')}<span>${CFG.pview==='list'?'카드':'한 줄'}</span></button></div>
+<div id="plistw">${projListHtml()}</div>
+<label class="selbox" style="margin:16px 0 0;cursor:pointer">${ic('cal')}<input type="date" value="${RD()}" onchange="refDay=this.value||null;render()" style="font-weight:600"><span class="muted" style="font-size:12px;flex:none">진행률 기준일</span></label>`}
+
 function newP(){view='newp';pf={n:'',k:S.projects.length%8,edit:null,status:'진행중',prog:null,alias:'',pm:'auto',mes:'',cust:'',prod:'',start:'',end:''};render()}
 function editP(id){const p=jn(id);pf={n:p.n,k:p.k,edit:id,status:pst(p),prog:p.prog??null,alias:(p.alias||[]).join(', '),pm:progMode(p),mes:p.mes||'',cust:p.cust||'',prod:p.prod||'',start:p.start||'',end:p.end||''};render()}
 function pSync(){pf.n=$('pn').value;pf.alias=$('pa').value;pf.mes=$('pmes').value.trim();pf.cust=$('pcu').value.trim();pf.prod=$('ppr').value.trim();pf.start=$('pst').value;pf.end=$('pen').value;const v=$('pp')?$('pp').value:'';pf.prog=v===''?null:Math.max(0,Math.min(100,+v))}
@@ -1212,6 +1284,42 @@ function moldView(){const all=(S.molds||[]).slice().sort(mdSort),pj=[...new Set(
 ${pj.length>1?`<div class="chips" style="margin-bottom:6px"><span class="chip${mdProj==='전체'?' on':''}" onclick="mdProj='전체';render()">전체</span>${pj.map(j=>`<span class="chip${mdProj===j?' on':''}" onclick="mdProj='${j}';render()">${esc(jn(j).n)}</span>`).join('')}</div>`:''}
 ${body||'<div class="card muted">기록이 없습니다.</div>'}`}
 
+/* ---------- 체크 노트 (포스트잇 보드) ---------- */
+const PIN_C=[['y','#FFF0A0'],['p','#FFD3DF'],['g','#CFF0D6'],['b','#D2E6FF'],['o','#FFDDB5']];
+const PIN_DEF=[{id:'ats',t:'ATS 견적 요청 시',d:'작번 채번 요청',c:'y',o:1},{id:'quote',t:'견적 산출 시 필요한 것',d:'레진, 수량, 제품 규격, 중량',c:'p',o:2},{id:'dhl',t:'DHL Booking',d:'매일 오후 3시 이전 영업팀에 요청',c:'b',o:3}];
+let PF=null;
+function pinSeed(){PIN_DEF.forEach(x=>{const k='k:'+x.id;if(!RECS[k])RECS[k]={k,d:{...x},u:1,dev:CFG.dev,pend:1}})}
+const pinsSorted=()=>(S.pins||[]).slice().sort((a,b)=>(a.o||0)-(b.o||0));
+function pinItems(d){const a=String(d||'').split(/[,\n]/).map(x=>x.trim()).filter(Boolean);return a}
+function pinDue(n){if(!n.time)return '';const now=new Date(),wd=now.getDay();if(wd===0||wd===6)return `<span class="pdl" data-t="${n.time}">⏰ 평일 ${n.time} 마감</span>`;return `<span class="pdl" data-t="${n.time}">${pinDueTxt(n.time)}</span>`}
+function pinDueTxt(t){const [h,m]=t.split(':').map(Number),now=new Date(),dl=new Date();dl.setHours(h,m,0,0);const diff=Math.round((dl-now)/60000);
+  if(diff<0)return `⏰ 오늘 ${t} 마감 지남`;const hh=Math.floor(diff/60),mm=diff%60;return `⏰ ${t}까지 ${hh?hh+'시간 ':''}${mm}분`}
+function pinTick(){document.querySelectorAll('.pdl[data-t]').forEach(e=>{const wd=new Date().getDay();if(wd===0||wd===6)return;const t=e.dataset.t,txt=pinDueTxt(t);e.textContent=txt;e.classList.toggle('over',txt.includes('지남'));
+  const [h,m]=t.split(':').map(Number),d=new Date();d.setHours(h,m,0,0);const left=(d-new Date())/60000;e.classList.toggle('soon',left>=0&&left<=60)})}
+setInterval(pinTick,30000);
+function pinBoard(){const L=pinsSorted();return `<div class="pinb"><div class="pinh"><span class="pint">${ic('pin')} 놓치면 안 되는 것</span><span class="pinsub">누르면 수정</span></div>
+<div class="pgrid">${L.map((n,i)=>{const it=pinItems(n.d),col=(PIN_C.find(c=>c[0]===n.c)||PIN_C[0])[1];
+  return `<div class="pnote" style="--pc:${col};--rot:${[-1.6,1.2,-0.8,1.7,-1.2,0.9][i%6]}deg" onclick="openPin('${esc(n.id)}')"><span class="ppin"></span>
+<div class="pnt">${esc(n.t)}</div>${it.length>1?`<div class="pntags">${it.map(x=>`<span>${esc(x)}</span>`).join('')}</div>`:`<div class="pnd">→ ${esc(n.d||'')}</div>`}${pinDue(n)}</div>`}).join('')}
+<div class="pnote padd" onclick="openPin()"><span>${ic('plus')}</span>메모 추가</div></div></div>`}
+function openPin(id){const ex=id?(S.pins||[]).find(n=>n.id===id):null;PF=ex?{...ex}:{id:'n'+Date.now().toString(36),t:'',d:'',c:PIN_C[(S.pins||[]).length%PIN_C.length][0],time:'',o:Math.max(0,...(S.pins||[]).map(n=>n.o||0))+1,_new:1};
+  const o=document.createElement('div');o.className='sheetbg';o.id='pinbg';o.onclick=e=>{if(e.target===o)o.remove()};document.body.appendChild(o);pinSheet()}
+function pinSheet(){const f=PF,o=$('pinbg');if(!o)return;const col=(PIN_C.find(c=>c[0]===f.c)||PIN_C[0])[1];
+  o.innerHTML=`<div class="sheet"><div class="shh" style="display:flex;justify-content:space-between;align-items:center">${f._new?'메모 추가':'메모 수정'}<button class="ib" onclick="$('pinbg').remove()" aria-label="닫기">${ic('x')}</button></div>
+<div class="pnote pprev" style="--pc:${col};--rot:0deg"><span class="ppin"></span><input id="pt" value="${esc(f.t)}" placeholder="언제 · 무엇을 (예: DHL Booking)" maxlength="40" oninput="PF.t=this.value"><textarea id="pd" rows="2" placeholder="할 일 · 주의할 것 (쉼표로 나누면 체크 항목으로 표시)" maxlength="200" oninput="PF.d=this.value">${esc(f.d)}</textarea></div>
+<div class="fl">색상</div><div class="chips">${PIN_C.map(([k,c])=>`<span class="pcol${f.c===k?' on':''}" style="background:${c}" onclick="PF.c='${k}';pinSheet()" aria-label="색상"></span>`).join('')}</div>
+<div class="fl">마감 시각 <span class="muted" style="font-weight:400;font-size:11px">(선택) 평일에 남은 시간 표시</span></div>
+<div style="display:flex;gap:6px;align-items:center"><input id="ptm" type="time" value="${f.time||''}" style="width:150px" onchange="PF.time=this.value">${f.time?`<button onclick="PF.time='';pinSheet()">지우기</button>`:''}</div>
+${!f._new?`<div class="fl">순서</div><div style="display:flex;gap:6px"><button onclick="pinMove(-1)">${ic('l')} 앞으로</button><button onclick="pinMove(1)">뒤로 ${ic('r')}</button></div>`:''}
+<div id="pe" class="err" style="margin-top:8px"></div>
+<button class="btnp" style="margin-top:12px" onclick="pinSave()">저장</button>
+${!f._new?`<button id="pdel" class="w100" style="margin-top:8px;color:var(--ng)" onclick="pinDel()">삭제</button>`:''}</div>`}
+function pinSave(){const f=PF;f.t=($('pt').value||'').trim();f.d=($('pd').value||'').trim();f.time=$('ptm').value||'';if(!f.t){$('pe').textContent='제목을 입력하세요';return}
+  const {_new,...rec}=f;if(!rec.time)delete rec.time;S.pins=(S.pins||[]).filter(n=>n.id!==rec.id);S.pins.push(rec);dirtyM();$('pinbg').remove();PF=null;render();saveNow('메모 저장됨')}
+function pinDel(){const b=$('pdel');if(b.dataset.c!=='1'){b.dataset.c='1';b.textContent='한 번 더 누르면 삭제';return}S.pins=(S.pins||[]).filter(n=>n.id!==PF.id);dirtyM();$('pinbg').remove();PF=null;render()}
+function pinMove(d){PF.t=$('pt').value;PF.d=$('pd').value;PF.time=$('ptm').value;const L=pinsSorted(),i=L.findIndex(n=>n.id===PF.id),j=i+d;if(i<0||j<0||j>=L.length)return;
+  const a=L[i],b=L[j],t=a.o;a.o=b.o;b.o=t;if(a.o===b.o){L.forEach((n,k)=>n.o=k+1);[a.o,b.o]=[b.o,a.o]}PF.o=a.o;dirtyM();render();pinSheet()}
+
 /* ---------- render ---------- */
 function render(){nav();const b=$('body');let h='',f=false,pg=true;
   if(view==='home'){h=homeView();f=true;pg=false}
@@ -1228,7 +1336,7 @@ function render(){nav();const b=$('body');let h='',f=false,pg=true;
   else if(view==='cal'){h=calView()}
   else if(view==='mbo'){h=mboView();pg=false}
   else if(view==='set'){h=setView()}
-  b.innerHTML=pg?`<div class="page">${h}</div>`:h;fab(f);hydratePhotos().then(()=>{if(view==='lsum')lsFit()});if(view==='lsum')lsFit()}
+  b.innerHTML=pg?`<div class="page">${h}</div>`:h;fab(f);pinTick();hydratePhotos().then(()=>{if(view==='lsum')lsFit()});if(view==='lsum')lsFit()}
 window.addEventListener('pagehide',()=>{if(dirty.size)flush()});
 init();
 </script>
